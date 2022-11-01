@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 100%;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: small-caps bold 3rem Georgia, serif;
+    padding: 2vh 0;
+    color: gray;
+}
+h2 {
+    font: small-caps bold 2rem Georgia, serif;
+    text-shadow: 2px 2px 2px black;
+}
+.card {
+    width: 30vw;
+    height: 50vh;
+    border-radius: 10%;
+    border: 1px solid rgb(128, 126, 126);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrousel {
+    display:grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+#html {
+    background: linear-gradient(196deg, rgba(247,99,0,0.2805497198879552) 0%, rgba(247,99,0,1) 40%);
+    color: rgb(255, 255, 255);
+}
+#css {
+    background: linear-gradient(196deg, rgba(37,75,221,1) 0%, rgba(41,101,241,1) 43%);
+    color: rgb(255, 255, 255);
+}
+#js {
+    background: linear-gradient(196deg, rgba(239,216,16,1) 0%, rgba(239,216,29,0.6166841736694677) 54%);
+    color: rgb(255, 255, 255);
+}
+#react {
+    background-color: rgb(94, 211, 243);
+    color: rgb(255, 255, 255);
+}
+#git {
+    background: linear-gradient(196deg, rgba(244,127,96,1) 0%, rgba(232,78,49,1) 43%);
+    color: rgb(255, 255, 255);
+}
+#logica {
+    background: linear-gradient(0deg, rgba(115,66,165,1) 0%, rgba(103,0,153,1) 50%);
+    color: rgb(255, 255, 255);
+}
+#python {
+    background: linear-gradient(0deg, rgba(241,205,73,1) 0%, rgba(74,124,166,1) 100%);
+    color: rgb(255, 255, 255);
+}
