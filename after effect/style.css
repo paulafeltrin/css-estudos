@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.container {
+    display: grid;
+    height: 90vh;
+    place-items: center;
+}
+.container a {
+    text-decoration: none;
+    font-size: 4rem;
+    color: #fff;
+    position: relative;
+}
+.container a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17rem;
+    height: 4rem;
+    background: #fff;
+    transition: .5s ease;
+}
+.container a:hover::after {
+    width: 0rem;
+    height: 0rem;
+}
