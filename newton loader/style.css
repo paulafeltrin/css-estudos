@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.gooery {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22vw;
+    height: 10vh;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    filter: contrast(20);
+}
+.gooery .dot {
+    position: absolute;
+    width: 2vw;
+    height: 5vh;
+    top: 3vh;
+    left: 2vw;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dot 2.8s infinite;
+}
+.gooery .dots {
+    transform: translateX(0);
+    margin-top: 3vh;
+    margin-left: 8vw;
+    animation: dots 2.8s infinite;
+}
+.gooery .dots span {
+    display: block;
+    float: left;
+    width: 2vw;
+    height: 5vh;
+    margin-left: 2vw;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+}
+@-moz-keyframes dot {
+    50% {
+        transform: translateX(15vw);
+    }
+}
+@-webkit-keyframes dot {
+    50% {
+        transform: translateX(15vw);
+    }
+}
+@-o-keyframes dot {
+    50% {
+        transform: translateX(15vw);
+    }
+}
+@keyframes dot {
+    50% {
+        transform: translateX(15vw);
+    }
+}
+@-moz-keyframes dots {
+    50% {
+        transform: translateX(-15vw);
+    }
+}
+@-webkit-keyframes dots {
+    50% {
+        transform: translateX(-10vw);
+    }
+}
+@-o-keyframes dots {
+    50% {
+        transform: translateX(-10vw);
+    }
+}
+@keyframes dots {
+    50% {
+        transform: translateX(-10vw);
+    }
+}
