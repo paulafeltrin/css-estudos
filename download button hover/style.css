@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+}
+.button {
+    width: 11vw;
+    height: 8vh;
+    background: #1163ff;
+    position: relative;
+    text-align: center;
+    border-radius: .45em;
+    transition: .3s;
+    cursor: pointer;
+}
+.button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: 9.5vw;
+    height: 5.5vh;
+    color: #fff;
+    font-size: .9rem;
+    border-radius: .25em;
+    line-height: 30vh;
+    bottom: 94px;
+    left: calc(50% - 128px /2);
+}
+.button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    left: calc(50% -10px);
+    bottom: 74px;
+}
+.button::before,
+.button::after {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-wrapper,
+.text,
+.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+}
+.text {
+    top: 0;
+}
+.text,
+.icon {
+    transition: top .5s;
+}
+.icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+}
+.button:hover {
+    background: #6c18ff;
+}
+.button:hover .text {
+    top: -100px;
+}
+.button:hover .icon {
+    top: 0;
+}
+.button:hover::before,
+.button:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+.button:hover::before {
+    bottom: 84px;
+}
+.button:hover::after {
+    bottom: 64px;
+}
