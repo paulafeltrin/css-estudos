@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -12px;
+    top: -7vh;
 }
 .button::before {
     position: absolute;
@@ -48,4 +48,19 @@ body {
     height: 2px;
     background: #fff;
     transition: all .4s ease;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #11257b;
+}
+a:hover {
+    color: #11247b74
+}
+a:active {
+    color: #11257b;
 }
