@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #572c2c;
+}
+section {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+}
+aside.card {
+    position: relative;
+}
+aside.card div.front,
+aside.card div.back {
+    position: absolute;
+    top: 0;
+    width: 24vw;
+    height: 50vh;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: .5s all ease-in-out;
+    border-radius: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 2px 0 #777;
+}
+aside.card div.front {
+    background: #28858b;
+    z-index: 2;
+    transform: rotate(0deg);
+}
+aside.card div.back {
+    background: #b072dc;
+    z-index: 1;
+    transform: rotate(-90deg);
+}
+aside.card:hover div.front {
+    z-index: 1;
+    transform: rotate(90deg);
+}
+aside.card:hover div.back {
+    z-index: 2;
+    transform: rotate(0deg);
+}
